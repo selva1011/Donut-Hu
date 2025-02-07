@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+* {
+  background: rgb(238, 174, 202);
+  /* background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  ); */
+  /* background: radial-gradient(circle at 50% 50%, #ffe5ce, #9c71f2); */
+  /* background: radial-gradient(circle at 50% 50%, #ffc7c7, #1a2656); */
+  background: radial-gradient(circle, rgba(163, 240, 255, 0.96), rgba(0, 149, 157, 0.98));
+-webkit-background: radial-gradient(circle, rgba(163, 240, 255, 0.96), rgba(0, 184, 194, 0.98));
+-moz-background: radial-gradient(circle, rgba(163, 240, 255, 0.96), rgba(0, 184, 194, 0.98));
+}
