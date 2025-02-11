@@ -2,9 +2,13 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import React, { useRef } from "react";
 import { useFrame } from '@react-three/fiber';
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
 
 const ImportedDesign = ({ path, ...props }) => {
     const modelRef = useRef();
+    const selectedColour = useSelector((state) => state.color.selectedColor)
+
+    console.log("selva", selectedColour)
 
     useFrame(() => {
         if (modelRef.current) {
@@ -15,11 +19,13 @@ const ImportedDesign = ({ path, ...props }) => {
     const { scene } = useGLTF(path);
 
     useEffect(() => {
-        const part = scene.getObjectByName("Icing"); 
+        const part = scene.getObjectByName("Icing");
         if (part) {
-          part.material.color.set(0xFF0000); // Green
+            if (selectedColour) {
+                part.material.color.set(selectedColour);
+            } 
         }
-      }, [scene]);
+    }, [scene, selectedColour]);
 
     //#FF869FFF
 
