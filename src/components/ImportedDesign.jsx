@@ -8,8 +8,6 @@ const ImportedDesign = ({ path, ...props }) => {
     const modelRef = useRef();
     const selectedColour = useSelector((state) => state.color.selectedColor)
 
-    console.log("selva", selectedColour)
-
     useFrame(() => {
         if (modelRef.current) {
             modelRef.current.rotation.y += 0.005;
