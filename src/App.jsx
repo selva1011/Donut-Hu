@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import AnimatedBox from './components/AnimatedBox'
 import { FirstPersonControls, OrbitControls, Text } from '@react-three/drei'
 import ImportedDesign from './components/ImportedDesign'
-import Donut from './components/donut'
+import Donut from './components/Donut'
 import RowColour from './components/RowColour'
 import Popper from './components/Popper'
 

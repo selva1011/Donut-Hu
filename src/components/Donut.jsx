@@ -15,4 +15,4 @@ const Donut = () => {
     )
 }
 
-export default Donut
+export default Donut;
