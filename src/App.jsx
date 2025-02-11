@@ -5,6 +5,7 @@ import { FirstPersonControls, OrbitControls, Text } from '@react-three/drei'
 import ImportedDesign from './components/ImportedDesign'
 import Donut from './components/donut'
 import RowColour from './components/RowColour'
+import Popper from './components/Popper'
 
 const App = () => {
   const [click, setClick] = useState(true)
@@ -26,7 +27,9 @@ const App = () => {
         <button className='text-2xl text-[#004963] font-semibold' onClick={() => setClick(!click)}>{click ? "Hide Me!!" : "Click me!!"}</button>
       </div>
       {click ? <Donut /> : null}
-     <div className='fixed bottom-4 h-16 flex justify-center items-center w-full'>
+
+     <div className='fixed bottom-1 mx-auto w-full'>
+     <Popper />
       <RowColour />
      </div>
 

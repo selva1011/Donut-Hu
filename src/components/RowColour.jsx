@@ -3,7 +3,7 @@ import React from 'react'
 const RowColour = () => {
 
     return (
-        <div className='flex justify-between px-2 gap-8'>
+        <div className='flex justify-between px-2 gap-6 w-[200px] mx-auto'>
             <button className='cursor-pointer gap-1 flex flex-col justify-end items-center'>
                 <img src="/sweet.png" alt="" width='41' />
                 <p className='text-white text-sm font-semibold'>BUN</p>
